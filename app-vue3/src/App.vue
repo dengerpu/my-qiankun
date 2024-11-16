@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue3 App"/>
+  <HelloWorld msg="Vue3子项目"/>
   <button @click="changeState">change global state</button>
 </template>
 

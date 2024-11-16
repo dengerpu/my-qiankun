@@ -1,3 +1,3 @@
 <template>
-<p>Home</p>
+<h1>主应用</h1>
 </template>
