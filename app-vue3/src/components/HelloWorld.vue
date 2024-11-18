@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p class="test">这里是测试 style</p>
-    <button @click="setWindowA">set window.a</button>
-    <button @click="getWindowA">get window.a</button>
+    <p class="test">Vue3子项目中的 这里是测试 style</p>
+    <button @click="setWindowA">Vue3 set window.a</button>
+    <button @click="getWindowA">Vue3 get window.a</button>
   </div>
 </template>
 

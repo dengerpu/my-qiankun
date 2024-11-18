@@ -1,12 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Vue3子项目"/>
-  <button @click="changeState">change global state</button>
+  <button @click="changeState">Vue3子项目 中 change global state</button>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import actions from './qiankun/actions'
+// import actions from './qiankun/actions'
 export default {
   name: 'App',
   components: {
@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     changeState(){
-      actions.setGlobalState({a: 200})
+      // actions.setGlobalState({a: 200})
     }
   }
 }

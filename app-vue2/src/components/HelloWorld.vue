@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button @click="getWindowA">console window.a</button>
+    <button @click="getWindowA">Vue2 console window.a</button>
   </div>
 </template>
 

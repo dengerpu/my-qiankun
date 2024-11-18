@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Vue2子项目"/>
-    <p class="app-p">测试 css 样式</p>
+    <p class="app-p">测试 Vu2子项目中的css 样式</p>
   </div>
 </template>
 

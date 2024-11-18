@@ -1,19 +1,20 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import Home from './Home.vue'
-import { registerMicroApps, start } from 'qiankun'
+// import { registerMicroApps, start } from 'qiankun'
+import { registerMicroApps, start } from './my-qiankun'
 
 import { createRouter, createWebHistory } from "vue-router"
 
 const apps = [
   {
-    name: 'vue2', // 应用的名字
+    name: 'app-vue2-app', // 应用的名字
     entry: 'http://localhost:2001/', // 默认加载这个html，解析里面的js动态的执行（子应用必须支持跨域，内部使用的是 fetch）
     container: '#sub-container', // 要渲染到的容器名id
     activeRule: '/vue2' // 通过哪一个路由来激活
   },
   {
-    name: 'vue3',
+    name: 'app-vue3-app',
     entry: 'http://localhost:3001/',
     container: '#sub-container',
     activeRule: '/vue3',
@@ -50,14 +51,3 @@ const router = createRouter({
 })
 
 createApp(App).use(router).mount('#app')
-
-const rawPushState = window.history.pushState
-  window.history.pushState = (...args) => {
-    // 导航前
-    rawPushState.apply(window.history, args)
-  }
-
-  const rawReplaceState = window.history.replaceState
-  window.history.replaceState = (...args)=>{
-    rawReplaceState.apply(window.history, args)
-  }
