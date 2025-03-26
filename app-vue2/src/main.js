@@ -14,7 +14,7 @@ function render(props = {}) {
   const shadowApp = container.firstChild.shadowRoot.querySelector('#app')
   instance = new Vue({
     render: (h) => h(App),
-  }).$mount(container ? shadowApp : '#app');
+  }).$mount(shadowApp ? shadowApp : '#app');
 }
 
 // 独立运行时
